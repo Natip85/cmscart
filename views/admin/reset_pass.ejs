@@ -1,0 +1,28 @@
+<%-include ('../_layouts/header') %>
+
+<h1><%= title %> </h1>
+<br>
+
+<form action="/users/reset-pass" method="post">
+
+  <div class="form-group">
+    <label for="">Email</label>
+    <input type="text" name="email" class="form-control" placeholder="Email">
+  </div>
+
+  <div class="form-group">
+    <label for="">New Password</label>
+    <input type="password" name="password" class="form-control" placeholder="New Password">
+  </div>
+
+  <div class="form-group">
+    <label for="">Confirm Password</label>
+    <input type="password" name="password2" class="form-control" placeholder="Confirm Password">
+  </div>
+
+  <button type="submit" class="btn btn-default">Reset</button>
+
+</form>
+
+
+<%- include('../_layouts/footer') %>
